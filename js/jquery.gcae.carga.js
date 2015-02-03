@@ -53,10 +53,3 @@ function calculaCSS(){
 	}
 }
 
-
-$('.bxslider').bxSlider({
-  auto: true,
-  pause: 3000,
-  slideMargin: 20,
-  captions: true
-});
