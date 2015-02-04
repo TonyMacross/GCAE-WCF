@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-	<header>
+	<header class="main-contaniner">
 		<h1>Cross Flow de México</h1>
 		<nav>
 			<ul>
@@ -20,8 +20,8 @@
 
 
 	</header>
-	<section id="main-contanier">
-		<section id="home" class="ContentSection">
+	<section id="main-contanier" class="main-contaniner">
+		<section id="home" class="contentSection">
 			<h2>Nosotros</h2>
 			<div id="slider">
 				
@@ -30,7 +30,7 @@
 				<ul class="rslides">
 				  <li><img src="./img/torredemo.jpg" alt=""></li>
 				  <li><img src="./img/chillerplant.jpg" alt=""></li>
-				  <li><img src="./img/torredemo.jpg" alt=""></li>
+				  <li><img src="./img/perro.jpg" alt=""></li>
 				</ul>
 
 			</div>
@@ -40,7 +40,7 @@
 
 			</div>
 		</section>
-		<section id="products" class="ContentSection">
+		<section id="products" class="contentSection">
 			<h2>Productos</h2>	
 			<article class="sp">
 				<h3 class="tittleServiceProduct">Torres de Enfriamiento</h3>
@@ -87,7 +87,7 @@
 			</article>		
 
 		</section>		
-		<section id="services" class="ContentSection">
+		<section id="services" class="contentSection">
 			<h2>Servicios</h2>	
 			<article class="sp">
 				<h3 class="tittleServiceProduct">Mantenimiento</h3>
@@ -135,17 +135,17 @@
 
 		</section>
 
-		<section id="contact" class="ContentSection">
+		<section id="contact" class="contentSection">
 			<h2>Contacto</h2>
 			<section class="contactContainer">
 				<div class="contactForm">
 					<div id="formulario">
-						Please fill all fields and press Send
+						Por favor llene el formulario y presione Enviar
 						<br/><br/>
-						<label for="name">Name: </label><br/><input type="text" id="name" placeholder="Your name"/><br/>
-						<label for="email">Email: </label><br/><input type="email" id="email" placeholder="Email address"/><br/>
-						<label for="subject">Subject: </label><br/><input type="text" id="subject" placeholder="Subject"/><br/>
-						<label for="comments">Comments: </label><br/><input type="textarea" id="comments"/><br/>
+						<label for="name">Nombre: </label><br/><input type="text" id="name" placeholder="Nombre o Contacto"/><br/>
+						<label for="email">Email: </label><br/><input type="email" id="email" placeholder="tucorreo@tuempresa.com"/><br/>
+						<label for="subject">Asunto: </label><br/><input type="text" id="subject" placeholder="Asunto o Comentarios"/><br/>
+						<label for="comments">Comentarios: </label><br/><input type="textarea" id="comments"/><br/>
 						<input type="submit" name="submit" id="submit" value="Enviar">
 					</div>
 				</div>
@@ -169,13 +169,13 @@
 			</section>
 
 		</section>
-		<!--<section class="ContentSection">
+		<!--<section class="contentSection">
 			
 		</section>-->
 
 	</section>
-	<footer>
-		
+	<footer class="main-contaniner">
+		Aquí va el footer
 
 	</footer>
 
@@ -184,7 +184,18 @@
 	<script src="./js/responsiveslides.min.js"></script>
 	<script>
 	  $(function() {
-	    $(".rslides").responsiveSlides();
+	    $(".rslides").responsiveSlides(
+		    {
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+				maxwidth: 800,
+				namespace: "centered-btns"
+			})
+	    
 	  });
 	</script>
 </body>

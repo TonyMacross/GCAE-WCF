@@ -1,3 +1,108 @@
+* { box-sizing: border-box }
+
+body {
+  background-color: #E9E9E9;   
+  font-size: 16px;
+  text-align: center;
+}
+
+.main-contaniner {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid yellow;
+}
+
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.contentSection {
+  padding: 5px 10px;
+}
+
+.contactContainer {
+  display: inline-block;
+}
+
+.sp {
+  display: inline-block;
+  max-width: 45%;
+  vertical-align: top;
+}
+
+.centered-btns_nav {
+  z-index: 3;
+  position: fixed;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("themes.gif") no-repeat left top;
+  margin-top: -45px;
+  }
+
+.centered-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+
+/*#slider a.rslides_nav.rslides1_nav.prev{
+  overflow:hidden;
+  width:34px;
+  height:70px;
+  display: inline-block;
+  margin-bottom: 130px;
+  z-index:2;
+  top:150px;
+  background:url(../img/slider_left.png);
+}
+
+#slider a.rslides_nav.rslides1_nav.prev:hover{
+  background:url(../img/slider_left_hover.png);
+}
+
+#slider a.rslides_nav.rslides1_nav.next{
+  overflow:hidden;
+  width:34px;
+  height:70px;
+  display: inline-block;
+  margin-bottom: 130px;
+  z-index:2;
+  top:150px;
+  background:url(../img/slider_right.png);
+}
+
+#slider a.rslides_nav.rslides1_nav.next:hover{
+  background:url(../img/slider_right_hover.png);
+}*/
+
+
+#slider{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+}
+
+
 .rslides {
   position: relative;
   list-style: none;
@@ -5,7 +110,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  }
+}
 
 .rslides li {
   -webkit-backface-visibility: hidden;
@@ -14,18 +119,22 @@
   width: 100%;
   left: 0;
   top: 0;
-  }
+}
 
 .rslides li:first-child {
   position: relative;
   display: block;
   float: left;
-  }
+}
 
 .rslides img {
   display: block;
   height: auto;
   float: left;
-  width: 50%;
+  width: 100%;
   border: 0;
-  }
+  border-radius: 30px;
+}
+
+#products, #services, #contact {
+  display: none;
