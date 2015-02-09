@@ -12,6 +12,8 @@ function muestraSeccion(seccion) {
 			$(sec).fadeIn(700);*/
 			$(sec).slideDown(700);
 			ultimaSeccion = seccion;
+			var cssNuevo = { "background-color":"red"};
+			//this.css(cssNuevo);
 	} else if (seccion=="contacto") {
 		$('#form').slideDown(1000);
         $('#message').remove();
