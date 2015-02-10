@@ -4,7 +4,6 @@
  * Containeres
  */
 body {
-  background-color: #E9E9E9;   
   font-size: 16px;
   text-align: center;
 }
@@ -21,14 +20,22 @@ body {
   padding-bottom: 1em;
 
 }
+#general-container {
+  background-image: url(../img/fondo1.jpg) no-repeat center top;
+  background-size: 100%;
+  background-position: -50% 0%;
+}
+
 header {
-  background-color: red;
+  background-color: rgba(19,16,14,.8);
 }
 header footer {
   width: 100%;
 } 
 footer {
-  background-color: green;
+  border-top: 5px solid rgba(251,83,65,1);
+  background-color: rgba(19,16,14,.8);
+  color: white;
   /*position: fixed;
   bottom: 0;*/
   height: 100px;
@@ -62,15 +69,16 @@ nav ul li a {
 .menuMobile{
   display: inline-block;
   width: 25%;
-  background-color: #29B6F6;
+  background-color: #C2CAD2;
   overflow: hidden;
   height: 5em;
   padding-top: 2em;
   padding-bottom: 2em;
-  color: white;
+  color: #636465;
 }
 .menuMobile:hover{
-  background-color: #039BE5;
+  border-top: 5px solid #FB4E3B;
+  background-color: #E4E8EB;
 }
 
 #quote {
@@ -152,9 +160,6 @@ nav ul li a {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  background: #ffffff url("../img/torres.jpg") no-repeat center top;
-  background-size: 100%;
-  background-position: -50% 0%;
   /*background-image: url(../img/torres.jpg) ;*/
 }
 
