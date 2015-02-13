@@ -27,16 +27,13 @@ body {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  /* border: 1px solid yellow; */
+  /*border: 1px solid yellow;*/
   padding-bottom: 1em;
-
 }
+
 #general-container {
     margin-top: 1em;
     margin-bottom: 1em;
-/*  background-image: url(../img/fondo1.jpg) no-repeat center top;
-  background-size: 100%;
-  background-position: -50% 0%;*/
 }
 
 .headerLogo {
@@ -161,22 +158,6 @@ nav ul li a:hover {
  margin: .5em 1em;
 }
 
-@media screen and (max-width: 1000px){
-  body {
-    background-color: gray;
-  }
-  nav {
-    display: none;
-  }
-  #mobile{
-    display: inline-block;
-    color: white;
-  }
-  .sp {
-    display: inline;
-    max-width: 90%;
-  }
-}
 
 .contactBox {
   color: #333333;
@@ -371,4 +352,57 @@ input[type=textarea]{
 
 input[type=submit]{
   width: 200px;
+}
+
+@media screen and (max-width: 1000px){
+  nav {
+    display: none;
+  }
+  #mobile{
+    display: inline-block;
+    color: white;
+  }
+  .sp {
+    display: inline;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait){
+  body {
+    background-image: none;
+  }
+
+  header img {
+    width: 35%;
+    height: 35%;
+  }
+
+  h1{
+    padding-top: 0px;
+    max-width: 200px;
+  }
+  h1 span::before {
+    content: "";
+  }
+
+  .contentSection {
+    border-radius: 0;
+  }
+
+  #mobile a{
+    text-decoration: none;
+  }
+
+  .menuMobile{ 
+    display: block;
+    margin-bottom: 0;
+    width: 100%;
+
+  }
+
+/*  .main-contaniner {
+    min-width: 400px;
+    max-width: 479px;
+  }*/
 }

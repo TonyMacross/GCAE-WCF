@@ -14,12 +14,12 @@
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-	<div id="body-bgd">
+<div id="body-bgd">
 	<header>
 		<section class="main-contaniner">
 			<div class="headerLogo">
 				<img src="./img/logo-icono.png" alt="">
-				<h1>Cross Flow de México</h1>
+				<h1>Cross Flow <span>de México</span></h1>
 			</div>
 			<nav id="nav_desktop">
 				<ul>
@@ -40,7 +40,6 @@
 				<h2>Cross Flow de México</h2>
 				<div id="slider">
 					<ul class="rslides">
-					 <!--  <li><img src="./img/0.jpg" alt=""></li> -->
 					  <li><img src="./img/img2.jpg" alt=""></li>
 					  <li><img src="./img/img3.jpg" alt=""></li>
 					  <li><img src="./img/img4.jpg" alt=""></li>
@@ -186,25 +185,25 @@
 			Design by <a href="http://www.grupocae.net" target="_blank"> Grupo CAE </a>
 		</section>
 	</footer>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="./js/jquery.gcae.carga.js"></script>
-	<script src="./js/responsiveslides.min.js"></script>
-	<script>
-	  $(function() {
-	    $(".rslides").responsiveSlides(
-		    {
-				auto: true,
-				pager: false,
-				nav: true,
-				speed: 500,
-				prevText: "Previous",   // String: Text for the "previous" button
-  				nextText: "Next",       // String: Text for the "next" button
-				maxwidth: 800,
-				namespace: "centered-btns"
-			})
-	    
-	  });
-	</script>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="./js/jquery.gcae.carga.js"></script>
+<script src="./js/responsiveslides.min.js"></script>
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides(
+	    {
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			prevText: "Previous",   // String: Text for the "previous" button
+				nextText: "Next",       // String: Text for the "next" button
+			maxwidth: 800,
+			namespace: "centered-btns"
+		})
+    
+  });
+</script>
 </body>
 </html>
