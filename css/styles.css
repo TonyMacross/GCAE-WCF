@@ -268,7 +268,7 @@ nav ul li a:hover {
   margin-right: auto;
   max-width: 640px;
   max-height: 380px;
-  box-shadow: 5px 0px 5px 0px blue;
+  box-shadow: 3px 3px 5px 2px gray;
 }
 
 
@@ -303,7 +303,7 @@ nav ul li a:hover {
   float: left;
   width: 100%;
   border: 0;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 
 #products, #services, #contact {
