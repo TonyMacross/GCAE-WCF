@@ -12,7 +12,6 @@ body {
   background-size: 100%;
   background-attachment: fixed;
   color: white;
-  /*background-repeat: no-repeat;*/
 }
 #body-bgd{
   background-color: rgba(150,150,150,.7);
@@ -28,7 +27,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 1em;
-  /*border: 1px solid yellow;*/
 }
 
 #general-container {
@@ -44,6 +42,13 @@ header {
   background-color: rgba(19,16,14,.8);
   
 }
+
+#home {border-top: .5em solid peru}
+#products {border-top: .5em solid lightgreen}
+#services {border-top: .5em solid lightblue}
+#contact {border-top: .5em solid cyan}
+
+
 header footer {
   width: 100%;
 } 
@@ -54,10 +59,6 @@ footer {
   height: 100px;
   /*position: fixed;
   bottom: 0; */
-}
-
-#content {
-  /*margin-bottom: 100px;*/
 }
 
 h1{
@@ -73,8 +74,15 @@ h3{
 }
 
 #nav_desktop {
-  text-align: right;
-  /* padding-right: 1em; */
+  /*text-align: right;*/
+  /*border: 2px solid yellow;*/
+  margin-top: 1em;
+}
+header {
+  border-bottom: 5px solid peru;
+}
+nav {
+
 }
 
 nav ul li {
@@ -96,7 +104,6 @@ nav ul li a:hover {
   border-radius: 25px;
   background-color: rgba(255,255,255,.85);
 }
-
 
 #mobile {
   width: 100%;
