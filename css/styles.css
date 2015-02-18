@@ -224,6 +224,10 @@ footer ul li a {
   vertical-align: middle;
 }
 
+.contactForm {
+  text-align: left;
+}
+
 input{
   color: #383838;
   padding-left: 5px;
