@@ -228,6 +228,20 @@ footer ul li a {
   text-align: left;
 }
 
+.tittleServiceProduct::before{
+  content: "■ ";
+}
+
+#products .tittleServiceProduct::before{
+  color: rgb(251,52,31);
+  font-size: 1.4em;
+}
+
+#services .tittleServiceProduct::before{
+  color: rgb(232,23,0);
+  font-size: 1.4em;
+}
+
 input{
   color: #383838;
   padding-left: 5px;
