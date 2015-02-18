@@ -1,0 +1,79 @@
+#mobile-home {
+	display: none;
+}
+
+
+@media screen and (max-width: 1000px){
+/* .container {
+	width: 100%;
+} */
+
+
+#mobile-home{
+	float: right;
+	padding-top: 50px;
+	padding-right: 30px;
+	vertical-align: middle;;
+	display: inline-block;
+}
+
+#mobile {
+  height: 12em;
+}
+#mobile-home{
+	font-size: 2em;
+}
+
+.menuMobile:hover{
+  border-top: none;
+  padding-top: 1em;
+  background-color: red;
+  color: white;
+}
+
+#mobile {
+	display: none;
+}
+
+#mobile a {
+	text-decoration: none;
+}
+
+#mobile-home a {
+	text-decoration: none;
+	color: white;
+}
+
+/* ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+
+
+ */
+.menuMobile{
+  display: block;
+  width: 100%;
+/*    background-color: rgba(255,255,255,.60);
+  overflow: hidden;
+  height: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #121212;  */
+} 
+
+
+
+/* nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px -20px;
+	transition: all .3s linear;
+	background-color: red;
+	font-size: 1.8em;
+} */
+
+}
